@@ -1,5 +1,7 @@
 <template>
   <div>
-    <h1> Hello world! </h1>
+    <the-header />
+    <NuxtPage />
+    <the-footer />
   </div>
 </template>
