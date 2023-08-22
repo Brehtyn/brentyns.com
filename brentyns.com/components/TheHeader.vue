@@ -2,10 +2,18 @@
   <header>
     <nav>
       <ul>
-        <NuxtLink to="/"> <li>Home</li> </NuxtLink>
-        <NuxtLink to="/map"> <li>Map</li> </NuxtLink>
-        <NuxtLink to="/about"> <li>About</li> </NuxtLink>
-        <NuxtLink to="/contact"> <li>Contact</li> </NuxtLink>
+        <NuxtLink to="/">
+          <li>Home</li>
+        </NuxtLink>
+        <NuxtLink to="/map">
+          <li>Map</li>
+        </NuxtLink>
+        <NuxtLink to="/about">
+          <li>About</li>
+        </NuxtLink>
+        <NuxtLink to="/contact">
+          <li>Contact</li>
+        </NuxtLink>
       </ul>
     </nav>
   </header>
@@ -20,26 +28,28 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background: red;
   width: 100vw;
+  background: rgba(0, 0, 0, 0.777);
 }
+
 nav {
   margin: 0 auto;
 }
+
 ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
 }
+
 li {
-    padding: 10px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff;
+  padding: 10px;
+  font-weight: 100;
+  color: #fff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: azure;
 }
-a {
-    text-decoration: none;
-}
+
 </style>
