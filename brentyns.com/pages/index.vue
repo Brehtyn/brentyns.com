@@ -3,6 +3,11 @@
     <div id="banner">
       <div> Brentyns Minecraft Server</div>
     </div>
+
+    <div>
+      <h1> Hello friends :)</h1>
+    </div>
+
   </div>
 </template>
 
@@ -12,7 +17,7 @@ export default {};
 
 <style scoped>
 #banner {
-  width: 100vw;
+  width: 100%;
   height: 350px;
   background-image: url(~/assets/banner.jpg);
   background-position: center;
@@ -20,12 +25,11 @@ export default {};
   background-size: cover;
 }
 #banner > div {
-  width: 100vw;
-  padding-top: clamp(1em, 1.5em, 2em);
+  width: 100%;
+  padding-top: clamp(1em, 1.3em, 2em);
   text-align: center;
-  font-size: clamp(3.5rem, 6vw, 5rem);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: clamp(3rem, 3.5rem, 5rem);
+  font-family: Minecraft_Title;
   color: azure;
   -webkit-text-stroke: 2.2px black; 
 }

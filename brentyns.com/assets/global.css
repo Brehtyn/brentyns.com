@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Minecraft_Title";
+    src: url(fonts/MinecraftTen.ttf);
+}
+
+@font-face {
+    font-family: "Minecraft_Body";
+    src: url(fonts/MinecraftRegular-Bmg3.otf) format("opentype");
+}

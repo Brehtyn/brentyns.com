@@ -25,11 +25,9 @@ export default {};
 
 <style scoped>
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  background: rgba(0, 0, 0, 0.777);
+  width: 100%;
+  background: rgba(0, 0, 0);
+  font-family: Minecraft_Body;
 }
 
 nav {
@@ -44,11 +42,9 @@ ul {
 }
 
 li {
-  padding: 10px;
+  padding: 1rem;
   font-weight: 100;
   color: #fff;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: azure;
 }
 
