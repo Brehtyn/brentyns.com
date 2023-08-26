@@ -1,9 +1,5 @@
 <template>
   <div>
-    <div id="banner">
-      <div>Brentyns Minecraft Server</div>
-    </div>
-
     <div id="intro">
       <div>
         <h1>Come on, grab your friends!</h1>
@@ -12,13 +8,17 @@
           than this! <br />
           <br />
 
-          Highly avaliable 24/7 non-whitelisted bedrock minecraft server. View
+          Highly avaliable 24/7 bedrock minecraft server. View
           our <NuxtLink to="about"> about page </NuxtLink> for more details.
         </p>
       </div>
 
       <div>
-        <img src="~/assets/island.png" alt="minecraft island with many phantoms inbound" max-width="100%" />
+        <img
+          src="~/assets/island.png"
+          alt="minecraft island with many phantoms inbound"
+          max-width="100%"
+        />
       </div>
     </div>
 
@@ -44,7 +44,11 @@
     </div>
 
     <div id="contact">
-      <img src="~/assets/skelly.png" alt="minecraft skeleton with big eyes" max-width="100%" />
+        <img
+          src="~/assets/skelly.png"
+          alt="minecraft skeleton with big eyes"
+          max-width="100%"
+        />
       <div>
         <h3>Get in touch?</h3>
         <p>
@@ -59,44 +63,30 @@
 </template>
 
 <script>
-export default {};
+export default {
+  head() {
+    return {
+      title: "About page",
+    };
+  },
+};
 </script>
 
-<style scoped>
-#banner {
-  width: 100%;
-  height: 350px;
-  background-image: url(~/assets/banner.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#banner > div {
-  padding: clamp(1em, 1.3em, 2em);
-  text-align: center;
-  font-size: clamp(3rem, 4rem, 5rem) !important;
-  font-family: Minecraft_Title;
-  color: azure;
-  -webkit-text-stroke: 2.2px black;
-  text-shadow: 2px 2px 4px #000;
-}
-
+<style>
 #intro {
   width: 100%;
-  padding: 2rem 0;
+  padding: 1rem 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  font-size: 1.2rem;
 }
 #intro > div {
   text-align: center;
-  color: azure;
 }
 #intro > div:nth-child(1) {
-  padding: 2rem;
-  justify-self: center;
-  justify-content: center;
-  width: 500px;
+  padding: 4rem .5rem 2rem .5rem;
+  width: 400px;
   text-shadow: 2px 2px #000;
 }
 #intro > div:nth-child(1) > h1 {
@@ -111,11 +101,11 @@ export default {};
 #server_banner {
   width: 100%;
   background: black;
-  color: #fff;
   text-align: center;
   letter-spacing: 3px;
   font-size: 1.3rem;
   padding: 4rem 0;
+  margin: 4rem auto;
 }
 
 #map_section {
@@ -145,6 +135,7 @@ export default {};
   padding: 1rem;
   font-family: Minecraft_Title;
   font-size: 1.2rem;
+  color: #000;
   background-image: linear-gradient(#000 #fff #000);
 }
 #map_section > div > a > button:hover {
@@ -158,17 +149,15 @@ export default {};
 #contact {
   margin: 4rem auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   height: fit-content;
 }
 #contact > div {
-  margin: 0 auto;
-  padding: 3rem 0;
-  width: clamp(50%, 320px, 100%);
-  color: azure;
+  padding: 3rem 1rem;
+  width: clamp(300px, 30%, 100%);
   text-shadow: 2px 2px 4px #000;
   font-size: 1.1rem;
 }
@@ -179,8 +168,9 @@ export default {};
   padding: 1rem 0;
 }
 #contact > img {
-  margin: 0 auto;
-  height: auto;
+  padding: 0;
+  margin: 0;
   width: 100px;
+  height: auto;
 }
 </style>

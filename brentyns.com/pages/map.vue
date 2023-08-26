@@ -13,6 +13,6 @@ export default {
  #map {
     margin: 0 auto;
     width: 100%;
-    height: 95vh;
+    height: 90vh;
  }
 </style>
