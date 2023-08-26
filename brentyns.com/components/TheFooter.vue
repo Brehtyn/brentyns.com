@@ -31,11 +31,11 @@
             <nav>
                 <NuxtLink to="https://github.com/Brehtyn/brentyns.com"> <img src="~/assets/logo_github.png" alt="github logo"/> </NuxtLink>
                 <NuxtLink to="https://ibigital.com"> <img src="~/assets/logo_simple_bigital_inverted.jpg" alt="ibigital logo inverted"/> </NuxtLink>
-                <NuxtLink to="https://brentyn.net"> <img src="~/assets/heart.png" alt="heart"/> </NuxtLink>
+                <NuxtLink to="https://brentyn.net"> <img src="~/assets/heart.png" alt="donation heart"/> </NuxtLink>
                 <NuxtLink to="https://www.minecraft.net/en-us/about-minecraft"> <img src="~/assets/logo_minecraft.png" alt="minecraft logo"/> </NuxtLink>
             </nav>
             <div>
-                Made and lovingly maintained by <NuxtLink to="https://brentyn.net"> Brentyn Hanna</NuxtLink>
+                Made and lovingly maintained by <NuxtLink to="https://brentyn.net"> Brentyn </NuxtLink>
             </div>
         </div>
     </footer>
@@ -65,25 +65,32 @@ img {
 }
 
 footer>div {
-    width: clamp(120px, 33%, 250px);
+    width: clamp(120px, 33.33%, 250px);
     padding: 2em .5em .5em .5em ;
-    text-align: left;
+    text-align: center;
     flex-wrap: nowrap;
 }
-
 footer>div:nth-child(1)>h1 {
     font-family: Minecraft_Title;
     font-size: 1.5em;
     padding-bottom: 1rem;
+    text-align: left;
 }
-
+footer>div:nth-child(1)>p  {
+    text-align: left;
+}
 footer>div:nth-child(2)>nav>ul>a {
     text-align: center;
     text-decoration: none;
     list-style-type: none;
-    color: rgba(255, 255, 255, 0.80);
+    color: #fff;
 }
-
+footer>div:nth-child(2)>nav>ul>a:hover {
+    color: chartreuse;
+}
+footer>div:nth-child(2)>nav>ul>a:active {
+    color: green;
+}
 footer>div:nth-child(2)>nav>ul>a>li {
     padding: 5px;
 }
@@ -96,7 +103,6 @@ footer>div:nth-child(2)>nav>ul>a>li {
     footer > div {
         width: auto;
         min-width: unset;
-        text-align: center;
     }
 }
 </style>

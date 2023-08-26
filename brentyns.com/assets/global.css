@@ -7,3 +7,31 @@
     font-family: "Minecraft_Body";
     src: url(fonts/MinecraftRegular-Bmg3.otf) format("opentype");
 }
+
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto-Medium.ttf) format("opentype");
+    font-weight: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-image: url(~/assets/stone.jpg);
+    background-size: 4rem;
+    background-repeat: repeat;
+    font-family: Roboto;
+}
+
+a {
+    color: #c2bbff;
+}
+a:hover {
+    color: chartreuse;
+}
+a:active {
+    color: green;
+}

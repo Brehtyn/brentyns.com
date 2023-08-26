@@ -24,6 +24,7 @@ export default {};
 </script>
 
 <style scoped>
+
 header {
   width: 100%;
   background: rgba(0, 0, 0);
@@ -45,7 +46,9 @@ li {
   padding: 1rem;
   font-weight: 100;
   color: #fff;
-  color: azure;
+}
+li:hover {
+  color: unset;
 }
 
 </style>
