@@ -28,7 +28,7 @@
                 </p>
             </div>
 
-            <img src="~/assets/creeper.png" alt="minecraft creeper art with red eyes" max-width="100%" />
+            <img src="~/assets/creeper.png" alt="minecraft creeper art with red eyes" />
         </div>
 
         <div id="content">
@@ -85,7 +85,9 @@
 #intro>img {
     padding: 10rem 4rem;
     width: 200px;
+    max-width: 100%;
     height: fit-content;
+
 }
 
 #content {

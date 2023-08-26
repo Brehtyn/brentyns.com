@@ -103,6 +103,7 @@ footer>div:nth-child(2)>nav>ul>a>li {
     footer > div {
         width: auto;
         min-width: unset;
+        padding: 2rem;
     }
 }
 </style>

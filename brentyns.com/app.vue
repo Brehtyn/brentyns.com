@@ -25,9 +25,9 @@
   background-size: cover;
 }
 #banner > div {
-  padding: clamp(1em, 1.3em, 2em);
+  padding-top: 100px;
   text-align: center;
-  font-size: clamp(3rem, 4rem, 5rem) !important;
+  font-size: 3rem;
   font-family: Minecraft_Title;
   color: azure;
   -webkit-text-stroke: 2.2px black;

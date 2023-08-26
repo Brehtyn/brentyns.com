@@ -35,7 +35,7 @@ text-align: center;
   letter-spacing: 5px;
   font-family: Minecraft_Body;
   text-shadow: 2px 2px #000;
-  margin-top: 7rem;
+  margin-top: 6rem;
 
 }
 #intro > p {
