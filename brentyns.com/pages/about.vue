@@ -83,9 +83,9 @@
 }
 
 #intro>img {
-    padding: 10rem 4rem;
-    width: 200px;
-    max-width: 100%;
+    padding: 6rem 4rem;
+    margin: 1rem;
+    width: clamp(100px, 250px, 100%);
     height: fit-content;
 
 }

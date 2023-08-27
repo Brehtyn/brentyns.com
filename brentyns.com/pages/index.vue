@@ -8,8 +8,8 @@
           than this! <br />
           <br />
 
-          Highly avaliable 24/7 bedrock minecraft server. View
-          our <NuxtLink to="about"> about page </NuxtLink> for more details.
+          Highly avaliable 24/7 bedrock minecraft server. View our
+          <NuxtLink to="about"> about page </NuxtLink> for more details.
         </p>
       </div>
 
@@ -28,8 +28,11 @@
 
       <p>Players Online :</p>
     </div>
-
+    <h3 id="map_section_header">On the map!</h3>
     <div id="map_section">
+      <div>
+        <NuxtLink to="/map"> <button>Take a look now!</button> </NuxtLink>
+      </div>
       <div>
         <p>
           Embrace new adventures more readily by never again feeling the string
@@ -38,17 +41,15 @@
           Find yourself (or your foes!) with an interative online map that is
           updated regularly.
         </p>
-
-        <NuxtLink to="/map"> <button>Take a look now!</button> </NuxtLink>
       </div>
     </div>
 
     <div id="contact">
-        <img
-          src="~/assets/skelly.png"
-          alt="minecraft skeleton with big eyes"
-          max-width="100%"
-        />
+      <img
+        src="~/assets/skelly.png"
+        alt="minecraft skeleton with big eyes"
+        max-width="100%"
+      />
       <div>
         <h3>Get in touch?</h3>
         <p>
@@ -63,13 +64,7 @@
 </template>
 
 <script>
-export default {
-  head() {
-    return {
-      title: "About page",
-    };
-  },
-};
+export default {};
 </script>
 
 <style>
@@ -85,7 +80,7 @@ export default {
   text-align: center;
 }
 #intro > div:nth-child(1) {
-  padding: 4rem .5rem 2rem .5rem;
+  padding: 4rem 0.5rem 2rem 0.5rem;
   width: 400px;
   text-shadow: 2px 2px #000;
 }
@@ -108,35 +103,39 @@ export default {
   margin: 4rem auto;
 }
 
+#map_section_header {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+  text-shadow: 2px 2px 4px #000;
+}
 #map_section {
+  width: 100%;
+  min-height: fit-content;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#map_section > div:first-of-type {
   width: 400px;
   max-width: 100%;
-  height: auto;
-  margin: 4rem auto;
-}
-#map_section > div {
-  width: 100%;
-  height: fit-content;
+  height: 400px;
+  max-height: 100%;
   text-align: center;
   background-image: url(~/assets/map.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-}
-#map_section > div > p {
-  text-align: left;
-  padding: 3rem 3rem 2rem 3rem;
-  font-size: 1.2rem;
+  background-size: contain;
 }
 #map_section > div > a > button {
-  margin: 1rem;
-  margin-bottom: 4rem;
   border-radius: 4px;
+  margin-top: 40%;
   padding: 1rem;
   font-family: Minecraft_Title;
   font-size: 1.2rem;
   color: #000;
-  background-image: linear-gradient(#000 #fff #000);
 }
 #map_section > div > a > button:hover {
   background-color: chartreuse;
@@ -145,9 +144,18 @@ export default {
   background-color: green;
   color: white;
 }
+#map_section > div:not(:first-of-type) {
+  width: clamp(200px, 50%, 300px);
+  height: fit-content;
+  text-align: left;
+  padding: 3rem;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 4px #000;
+}
 
 #contact {
-  margin: 4rem auto;
+  margin:4rem auto;
+  padding-top: 2rem;
   display: flex;
   justify-content: center;
   flex-direction: row;
